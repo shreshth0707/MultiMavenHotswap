@@ -1,0 +1,2 @@
+set MAVEN_OPTS=-Xdebug -Djava.compiler=NONE -agentlib:jdwp=transport=dt_socket,address=4000,server=y,suspend=n  -Xmx1024m -XXaltjvm=dcevm -javaagent:C:\Users\rshar\Downloads\hotswap-agent-1.1.0-SNAPSHOT.jar -XX:+UnlockDiagnosticVMOptions -XX:+EnableInvokeDynamic
+call mvn clean jetty:run %1
